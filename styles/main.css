@@ -1,7 +1,11 @@
 body {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 h1 {
-  color: #aaa;
+    color: #aaa;
+}
+
+.text {
+    color: red;
 }
