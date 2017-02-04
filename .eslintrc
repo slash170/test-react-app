@@ -76,7 +76,7 @@
     "no-this-before-super": 2,
     "vars-on-top": 2,
     "no-unreachable": 2,
-    "no-param-reassign": 2,
+    /* "no-param-reassign": 2, */
     "no-with": 2,
     "flowtype/define-flow-type": 1,
     "flowtype/use-flow-type": 1,

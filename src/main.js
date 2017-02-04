@@ -1,4 +1,9 @@
 /* @flow */
+import React from "react";
+import ReactDOM from "react-dom";
+import { createStore } from "redux";
+import { Provider, connect} from "react-redux";
+
 // 初期状態の設定とreducerを作成する部分
 const initialFruit = {
   name: "りんご",
@@ -34,7 +39,7 @@ const fruit = function (state, action) {
   }
 };
 // storeの生成はRedux.createStoreが勝手にやってくれる
-const store = Redux.createStore(fruit);
+const store = createStore(fruit);
 
 // Viewの部分
 const Counter = React.createClass({
@@ -72,10 +77,10 @@ const mapStateToProps = function (state) {
     count: state.count
   };
 };
-const connect = ReactRedux.connect;
-const CounterContainer = connect(mapStateToProps)(Counter);
+const conn = connect;
+const CounterContainer = conn(mapStateToProps)(Counter);
 
-const Provider = ReactRedux.Provider;
+// const Prov = Provider;
 const counters = (
   <Provider store={store}>
     <CounterContainer />
