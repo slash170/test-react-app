@@ -59,5 +59,11 @@
     "require": [
       "babel-register"
     ]
+  },
+  "devDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
   }
 }
